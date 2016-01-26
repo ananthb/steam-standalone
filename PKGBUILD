@@ -10,8 +10,8 @@ arch=('x86_64' 'i686')
 license=('GPL')
 depends=('systemd' 'xorg-server' 'xorg-xinit' 'steam' 'polkit')
 install=readme.install
-source=("https://github.com/ananthb/$pkgname/archive/v$pkgver.tar.gz")
-sha256sums=('a165a66e976bb1a6ac622618887c2f9699acd84d8790af517b85a66bf5e0474c')
+source=("https://github.com/ananthb/$pkgname/releases/download/$pkgver/files.tar.gz")
+sha256sums=('f2a2de40be790e92cdbfea4fd5b88395f904e7e689905c9c95dc781c63e49a46')
 
 package() {
 	install -Dm644 "$srcdir/$pkgname-$pkgver/steam.service" \
